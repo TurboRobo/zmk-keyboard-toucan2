@@ -1,6 +1,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/pointing.h>
 
 #define BASE 0
 #define NAV  1
@@ -99,14 +100,14 @@
         base {
             display-name = "BASE";
             bindings = <
-&mt LEFT_ALT ESCAPE  &Autoshift LS(Q) Q  &Autoshift LS(W) W  &Autoshift LS(E) E  &Autoshift LS(R) R  &Autoshift LS(T) T  &Autoshift LS(Y) Y  &Autoshift LS(U) U  &Autoshift LS(I) I  &Autoshift LS(O) O  &Autoshift LS(P) P  &Autoshift LS(MINUS) MINUS  &sl 1  &Autoshift LS(A) A  &Autoshift LS(S) S  &Autoshift LS(D) D  &Autoshift LS(F) F  &Autoshift LS(G) G  &Autoshift LS(H) H  &Autoshift LS(J) J  &Autoshift LS(K) K  &Autoshift LS(L) L  &Autoshift LS(SEMI) SEMICOLON  &Autoshift LS(SQT) SQT  &kp LEFT_SHIFT  &Autoshift LS(Z) Z  &Autoshift LS(X) X  &Autoshift LS(C) C  &Autoshift LS(V) V  &Autoshift LS(B) B  &Autoshift LS(N) N  &Autoshift LS(M) M  &Autoshift LS(COMMA) COMMA  &Autoshift LS(DOT) PERIOD  &Autoshift LS(FSLH) SLASH  &sk LC(LEFT_SHIFT)  &sk LCTRL  &kp BACKSPACE  &kp DELETE  &mt LEFT_GUI ENTER  &kp LS(SPACE)  &mt LS(TAB) TAB
+&mt LEFT_ALT ESCAPE  &Autoshift LS(Q) Q  &Autoshift LS(W) W  &Autoshift LS(E) E  &Autoshift LS(R) R  &Autoshift LS(T) T  &Autoshift LS(Y) Y  &Autoshift LS(U) U  &Autoshift LS(I) I  &Autoshift LS(O) O  &Autoshift LS(P) P  &Autoshift LS(MINUS) MINUS  &sl 1  &Autoshift LS(A) A  &Autoshift LS(S) S  &Autoshift LS(D) D  &Autoshift LS(F) F  &Autoshift LS(G) G  &Autoshift LS(H) H  &Autoshift LS(J) J  &Autoshift LS(K) K  &Autoshift LS(L) L  &Autoshift LS(SEMI) SEMICOLON  &Autoshift LS(SQT) SQT  &kp LEFT_SHIFT  &Autoshift LS(Z) Z  &Autoshift LS(X) X  &Autoshift LS(C) C  &Autoshift LS(V) V  &Autoshift LS(B) B  &Autoshift LS(N) N  &Autoshift LS(M) M  &Autoshift LS(COMMA) COMMA  &Autoshift LS(DOT) PERIOD  &Autoshift LS(FSLH) SLASH  &sk LC(LEFT_SHIFT)  &sk LCTRL  &kp BACKSPACE  &kp DELETE  &mt LEFT_GUI ENTER  &kp SPACE  &mt LS(TAB) TAB
             >;
         };
 
         NUM {
             display-name = "NUM";
             bindings = <
-&Autoshift LS(EQUAL) EQUAL  &Autoshift LS(NUMBER_6) NUMBER_6  &Autoshift LS(N7) N7  &Autoshift LS(N8) N8  &Autoshift LS(N9) N9  &Autoshift LS(N0) N0  &none  &none  &kp UP_ARROW  &none  &none  &none  &kp PERIOD  &Autoshift LS(NUMBER_1) NUMBER_1  &Autoshift LS(NUMBER_2) NUMBER_2  &Autoshift LS(NUMBER_3) NUMBER_3  &Autoshift LS(NUMBER_4) NUMBER_4  &Autoshift LS(N5) N5  &none  &kp LEFT  &kp DOWN  &kp RIGHT  &Autoshift LS(SEMICOLON) SEMICOLON  &Autoshift LS(GRAVE) SQT  &kp LSHFT  &mt MINUS SLASH  &mt MINUS SLASH  &mt MINUS SLASH  &Autoshift LS(LEFT_BRACKET) LEFT_BRACKET  &Autoshift LS(LEFT_BRACKET) LEFT_BRACKET  &none  &none  &Autoshift LS(COMMA) COMMA  &Autoshift LS(PERIOD) PERIOD  &Autoshift LS(SLASH) SLASH  &kp TILDE  &trans  &trans  &trans  &trans  &trans  &trans
+&Autoshift LS(EQUAL) EQUAL  &Autoshift LS(NUMBER_6) NUMBER_6  &Autoshift LS(N7) N7  &Autoshift LS(N8) N8  &Autoshift LS(N9) N9  &Autoshift LS(N0) N0  &mkp LCLK  &mkp RCLK  &kp UP_ARROW  &none  &none  &none  &kp PERIOD  &Autoshift LS(NUMBER_1) NUMBER_1  &Autoshift LS(NUMBER_2) NUMBER_2  &Autoshift LS(NUMBER_3) NUMBER_3  &Autoshift LS(NUMBER_4) NUMBER_4  &Autoshift LS(N5) N5  &mkp MCLK  &kp LEFT  &kp DOWN  &kp RIGHT  &Autoshift LS(SEMICOLON) SEMICOLON  &Autoshift LS(GRAVE) SQT  &kp LSHFT  &mt MINUS SLASH  &mt MINUS SLASH  &mt MINUS SLASH  &Autoshift LS(LEFT_BRACKET) LEFT_BRACKET  &Autoshift LS(LEFT_BRACKET) LEFT_BRACKET  &none  &none  &Autoshift LS(COMMA) COMMA  &Autoshift LS(PERIOD) PERIOD  &Autoshift LS(SLASH) SLASH  &kp TILDE  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
