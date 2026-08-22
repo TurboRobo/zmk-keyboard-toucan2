@@ -80,6 +80,11 @@
             bindings = <&bt BT_CLR>;
             key-positions = <24 12>;
         };
+
+        CenterClick {
+            bindings = <&mkp MB3>;
+            key-positions = <18 19>;
+        };
     };
 
     behaviors {
