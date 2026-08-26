@@ -42,7 +42,7 @@
         };
 
         ScreenSnip {
-            bindings = <&kp LS(LC(S))>;
+            bindings = <&kp LS(LG(S))>;
             key-positions = <24 25>;
         };
 
