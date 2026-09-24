@@ -90,6 +90,11 @@
             bindings = <&kp ESC>;
             key-positions = <16 15>;
         };
+
+        MDCL {
+            bindings = <&mkp MB3>;
+            key-positions = <18 19>;
+        };
     };
 
     behaviors {
