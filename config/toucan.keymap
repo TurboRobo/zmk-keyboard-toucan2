@@ -13,8 +13,8 @@
         compatible = "zmk,conditional-layers";
 
         tri_layer {
-            if-layers = <2 1>;
-            then-layer = <3>;
+            if-layers = <3 1>;
+            then-layer = <4>;
         };
     };
 
@@ -85,6 +85,11 @@
             bindings = <&mkp MB3>;
             key-positions = <18 19>;
         };
+
+        Esc {
+            bindings = <&kp ESC>;
+            key-positions = <16 15>;
+        };
     };
 
     behaviors {
@@ -105,14 +110,20 @@
         base {
             display-name = "BASE";
             bindings = <
-&mt LEFT_ALT ESCAPE  &Autoshift LS(Q) Q  &Autoshift LS(W) W  &Autoshift LS(E) E  &Autoshift LS(R) R  &Autoshift LS(T) T  &Autoshift LS(Y) Y  &Autoshift LS(U) U  &Autoshift LS(I) I  &Autoshift LS(O) O  &Autoshift LS(P) P  &Autoshift LS(MINUS) MINUS  &sl 1  &Autoshift LS(A) A  &Autoshift LS(S) S  &Autoshift LS(D) D  &Autoshift LS(F) F  &Autoshift LS(G) G  &Autoshift LS(H) H  &Autoshift LS(J) J  &Autoshift LS(K) K  &Autoshift LS(L) L  &Autoshift LS(SEMI) SEMICOLON  &Autoshift LS(SQT) SQT  &kp LEFT_SHIFT  &Autoshift LS(Z) Z  &Autoshift LS(X) X  &Autoshift LS(C) C  &Autoshift LS(V) V  &Autoshift LS(B) B  &Autoshift LS(N) N  &Autoshift LS(M) M  &Autoshift LS(COMMA) COMMA  &Autoshift LS(DOT) PERIOD  &Autoshift LS(FSLH) SLASH  &sk LC(LEFT_SHIFT)  &sk LCTRL  &kp BACKSPACE  &kp DELETE  &mt LEFT_GUI ENTER  &kp SPACE  &mt LS(TAB) TAB
+&mt LEFT_ALT ESCAPE  &Autoshift LS(Q) Q  &Autoshift LS(W) W  &Autoshift LS(E) E  &Autoshift LS(R) R  &Autoshift LS(T) T  &Autoshift LS(Y) Y  &Autoshift LS(U) U  &Autoshift LS(I) I  &Autoshift LS(O) O  &Autoshift LS(P) P  &Autoshift LS(MINUS) MINUS  &lt 1 CAPS  &Autoshift LS(A) A  &Autoshift LS(S) S  &Autoshift LS(D) D  &Autoshift LS(F) F  &Autoshift LS(G) G  &Autoshift LS(H) H  &Autoshift LS(J) J  &Autoshift LS(K) K  &Autoshift LS(L) L  &Autoshift LS(SEMI) SEMICOLON  &Autoshift LS(SQT) SQT  &kp LEFT_SHIFT  &Autoshift LS(Z) Z  &Autoshift LS(X) X  &Autoshift LS(C) C  &Autoshift LS(V) V  &Autoshift LS(B) B  &Autoshift LS(N) N  &Autoshift LS(M) M  &Autoshift LS(COMMA) COMMA  &Autoshift LS(DOT) PERIOD  &Autoshift LS(FSLH) SLASH  &sk LC(LEFT_SHIFT)  &kp LCTRL  &kp BACKSPACE  &kp DELETE  &mt LEFT_GUI ENTER  &kp SPACE  &mt LS(TAB) TAB
             >;
         };
 
         NUM {
             display-name = "NUM";
             bindings = <
-&Autoshift LS(EQUAL) EQUAL  &Autoshift LS(NUMBER_6) NUMBER_6  &Autoshift LS(N7) N7  &Autoshift LS(N8) N8  &Autoshift LS(N9) N9  &Autoshift LS(N0) N0  &mkp LCLK  &mkp RCLK  &kp UP_ARROW  &none  &none  &none  &kp PERIOD  &Autoshift LS(NUMBER_1) NUMBER_1  &Autoshift LS(NUMBER_2) NUMBER_2  &Autoshift LS(NUMBER_3) NUMBER_3  &Autoshift LS(NUMBER_4) NUMBER_4  &Autoshift LS(N5) N5  &mkp MCLK  &kp LEFT  &kp DOWN  &kp RIGHT  &Autoshift LS(SEMICOLON) SEMICOLON  &Autoshift LS(GRAVE) SQT  &kp LSHFT  &mt MINUS SLASH  &mt MINUS SLASH  &mt MINUS SLASH  &Autoshift LS(RIGHT_BRACKET) LEFT_BRACKET  &Autoshift LS(RIGHT_BRACKET) LEFT_BRACKET  &kp ESC  &none  &Autoshift LS(COMMA) COMMA  &Autoshift LS(PERIOD) PERIOD  &Autoshift LS(SLASH) SLASH  &kp TILDE  &trans  &trans  &trans  &trans  &trans  &trans
+&Autoshift LS(EQUAL) EQUAL  &Autoshift LS(NUMBER_6) NUMBER_6  &Autoshift LS(N7) N7  &Autoshift LS(N8) N8  &Autoshift LS(N9) N9  &Autoshift LS(N0) N0  &mkp LCLK  &mkp RCLK  &kp UP_ARROW  &none  &none  &none  &to 0  &Autoshift LS(NUMBER_1) NUMBER_1  &Autoshift LS(NUMBER_2) NUMBER_2  &Autoshift LS(NUMBER_3) NUMBER_3  &Autoshift LS(NUMBER_4) NUMBER_4  &Autoshift LS(N5) N5  &mkp MCLK  &kp LEFT  &kp DOWN  &kp RIGHT  &Autoshift LS(SEMICOLON) SEMICOLON  &Autoshift LS(GRAVE) SQT  &kp LSHFT  &mt MINUS SLASH  &mt MINUS SLASH  &mt MINUS SLASH  &Autoshift LS(RIGHT_BRACKET) LEFT_BRACKET  &Autoshift LS(RIGHT_BRACKET) LEFT_BRACKET  &kp ESC  &none  &Autoshift LS(COMMA) COMMA  &Autoshift LS(PERIOD) PERIOD  &Autoshift LS(SLASH) SLASH  &kp TILDE  &lt 3 PERIOD  &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        LeftNav {
+            bindings = <
+&none  &none  &none  &kp UP  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &kp LEFT  &kp DOWN  &kp RIGHT  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &trans  &trans  &none  &none  &none
             >;
         };
 
@@ -126,7 +137,7 @@
         adj {
             display-name = "ADJ";
             bindings = <
-&mo 0  &trans  &kp F7  &kp F8  &kp F9  &kp F12  &kp C_VOL_DN  &kp C_MUTE  &kp C_VOL_UP  &trans  &trans  &kp BSPC  &kp LCTRL  &trans  &kp F4  &kp F5  &kp F6  &kp F11  &trans  &trans  &trans  &trans  &trans  &trans  &bt LSHFT  &trans  &kp F1  &kp F2  &kp F3  &kp F10  &trans  &trans  &trans  &trans  &trans  &trans  &kp LGUI  &mo 2  &kp SPACE  &kp RET  &mo 1  &kp RALT
+&mo 0  &trans  &kp F7  &kp F8  &kp F9  &kp F12  &kp C_VOL_DN  &kp C_MUTE  &kp C_VOL_UP  &trans  &trans  &kp BSPC  &kp LCTRL  &trans  &kp F4  &kp F5  &kp F6  &kp F11  &trans  &trans  &trans  &trans  &trans  &trans  &bt LSHFT  &trans  &kp F1  &kp F2  &kp F3  &kp F10  &trans  &trans  &trans  &trans  &trans  &trans  &kp LGUI  &mo 3  &kp SPACE  &kp RET  &mo 1  &kp RALT
             >;
         };
 
