@@ -148,7 +148,7 @@
         NUM {
             display-name = "NUM";
             bindings = <
-&Autoshift LS(EQUAL) EQUAL  &Autoshift LS(NUMBER_6) NUMBER_6  &Autoshift LS(N7) N7  &Autoshift LS(N8) N8  &Autoshift LS(N9) N9  &Autoshift LS(N0) N0  &kp ESCAPE  &none  &kp UP_ARROW  &none  &none  &Autoshift LS(MINUS) MINUS  &to 0  &Autoshift LS(NUMBER_1) NUMBER_1  &Autoshift LS(NUMBER_2) NUMBER_2  &Autoshift LS(NUMBER_3) NUMBER_3  &Autoshift LS(NUMBER_4) NUMBER_4  &Autoshift LS(N5) N5  &none  &kp LEFT  &kp DOWN  &kp RIGHT  &Autoshift LS(SEMICOLON) SEMICOLON  &Autoshift LS(APOSTROPHE) SQT  &kp LSHFT  &mt MINUS SLASH  &mt MINUS SLASH  &mt MINUS SLASH  &Autoshift LS(RIGHT_BRACKET) LEFT_BRACKET  &Autoshift LS(RIGHT_BRACKET) LEFT_BRACKET  &none  &none  &Autoshift LS(COMMA) COMMA  &Autoshift LS(PERIOD) PERIOD  &Autoshift LS(SLASH) SLASH  &kp TILDE  &lt 3 PERIOD  &trans  &trans  &trans  &trans  &trans
+&Autoshift LS(EQUAL) EQUAL  &Autoshift LS(NUMBER_6) NUMBER_6  &Autoshift LS(N7) N7  &Autoshift LS(N8) N8  &Autoshift LS(N9) N9  &Autoshift LS(N0) N0  &kp ESCAPE  &none  &kp UP_ARROW  &none  &none  &Autoshift LS(MINUS) MINUS  &to 0  &Autoshift LS(NUMBER_1) NUMBER_1  &Autoshift LS(NUMBER_2) NUMBER_2  &Autoshift LS(NUMBER_3) NUMBER_3  &Autoshift LS(NUMBER_4) NUMBER_4  &Autoshift LS(N5) N5  &none  &kp LEFT  &kp DOWN  &kp RIGHT  &Autoshift LS(SEMICOLON) SEMICOLON  &Autoshift LS(APOSTROPHE) SQT  &kp LSHFT  &mt MINUS SLASH  &mt MINUS SLASH  &mt MINUS SLASH  &mt RIGHT_BRACKET LEFT_BRACKET  &mt RIGHT_BRACKET LEFT_BRACKET  &none  &none  &Autoshift LS(COMMA) COMMA  &Autoshift LS(PERIOD) PERIOD  &Autoshift LS(SLASH) SLASH  &kp TILDE  &lt 3 PERIOD  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
