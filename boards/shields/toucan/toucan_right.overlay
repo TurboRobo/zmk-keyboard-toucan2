@@ -64,11 +64,10 @@
         scroll-sensitivity = <100>;
 
         filter-settings=<0x0B>;
-        hold-time = <250>;
+        hold-time = <500>;
 
+        zoom;
         scroll;
-        natural-scroll-y;
-        natural-scroll-x;
         two-finger-tap;
         single-tap;
         press-and-hold;
@@ -76,7 +75,6 @@
         three-finger-swipe;
         three-finger-swipe-throttle-ms = <1200>;
         switch-xy;
-
 
     };
 };
