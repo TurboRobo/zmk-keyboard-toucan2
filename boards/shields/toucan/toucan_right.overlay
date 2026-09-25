@@ -67,8 +67,6 @@
         hold-time = <250>;
 
         scroll;
-        natural-scroll-y;
-        natural-scroll-x;
         two-finger-tap;
         single-tap;
         press-and-hold;
